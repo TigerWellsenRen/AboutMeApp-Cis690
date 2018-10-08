@@ -5,10 +5,9 @@
              x:Class="AboutMeApp.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+        <Label Text="This An About me App" HorizontalOptions="Center"    BackgroundColor="Silver" />
+        <Label Text="Tiger Ren" HorizontalOptions="Center"    BackgroundColor="Silver" />
+        <Label Text="Fill" HorizontalOptions="Fill"    BackgroundColor="Silver" />
 
+    </StackLayout>
 </ContentPage>

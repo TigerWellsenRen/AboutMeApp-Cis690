@@ -5,9 +5,55 @@
              x:Class="AboutMeApp.MainPage">
 
     <StackLayout>
-        <Label Text="This An About me App" HorizontalOptions="Center"    BackgroundColor="Silver" />
-        <Label Text="Tiger Ren" HorizontalOptions="Center"    BackgroundColor="Silver" />
-        <Label Text="Fill" HorizontalOptions="Fill"    BackgroundColor="Silver" />
-
+        <Label Text="This is An About me App" 
+               HeightRequest="65"
+               FontSize="30"
+               HorizontalOptions="Fill"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="Red"
+               TextColor="Yellow"/>
+        <Label Text="Tiger Ren" 
+               FontSize="40"
+               Margin="50,60"
+               WidthRequest="200"
+               HeightRequest="65"
+               HorizontalOptions="Center"   
+               BackgroundColor="DeepSkyBlue"
+               HorizontalTextAlignment="Center"/>
+        <Label Text="About Me"
+               FontSize="30"
+               Margin="50,20"
+               HorizontalOptions="Fill"    
+               BackgroundColor="Green"
+               HorizontalTextAlignment="Center"
+               HeightRequest="50"
+               TextColor="GreenYellow"
+               />
+        <Label Text="Skills" 
+               FontSize="30"
+               Margin="50,20"
+               HorizontalOptions="Fill"    
+               BackgroundColor="Green"
+               HorizontalTextAlignment="Center"
+               HeightRequest="50"
+               TextColor="GreenYellow"
+               />
+        <Label Text="Contact Me"
+               FontSize="30"
+               Margin="50,20"
+               HorizontalOptions="Fill"    
+               BackgroundColor="Green"
+               HorizontalTextAlignment="Center"
+               HeightRequest="50"
+               TextColor="GreenYellow"
+               />
+        <Label Text="Leave a like if you want!~" 
+               HeightRequest="45"
+               FontSize="25"
+               HorizontalOptions="Fill"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="EndAndExpand"
+               BackgroundColor="Red"
+               TextColor="Yellow"/>
     </StackLayout>
 </ContentPage>

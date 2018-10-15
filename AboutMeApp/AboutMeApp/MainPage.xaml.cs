@@ -13,5 +13,10 @@ namespace AboutMeApp
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void NavigationButton1_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

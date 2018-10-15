@@ -4,7 +4,10 @@
              xmlns:local="clr-namespace:AboutMeApp"
              x:Class="AboutMeApp.MainPage">
 
-    <StackLayout>
+    <StackLayout Padding=" 20"
+                 Spacing=" 20"
+                 HorizontalOptions="FillAndExpand" >
+
         <Label Text="This is An About me App" 
                HeightRequest="65"
                FontSize="30"
@@ -20,40 +23,65 @@
                HorizontalOptions="Center"   
                BackgroundColor="DeepSkyBlue"
                HorizontalTextAlignment="Center"/>
-        <Label Text="About Me"
-               FontSize="30"
-               Margin="50,20"
-               HorizontalOptions="Fill"    
-               BackgroundColor="Green"
-               HorizontalTextAlignment="Center"
-               HeightRequest="50"
-               TextColor="GreenYellow"
-               />
-        <Label Text="Skills" 
-               FontSize="30"
-               Margin="50,20"
-               HorizontalOptions="Fill"    
-               BackgroundColor="Green"
-               HorizontalTextAlignment="Center"
-               HeightRequest="50"
-               TextColor="GreenYellow"
-               />
-        <Label Text="Contact Me"
-               FontSize="30"
-               Margin="50,20"
-               HorizontalOptions="Fill"    
-               BackgroundColor="Green"
-               HorizontalTextAlignment="Center"
-               HeightRequest="50"
-               TextColor="GreenYellow"
-               />
-        <Label Text="Leave a like if you want!~" 
-               HeightRequest="45"
-               FontSize="25"
-               HorizontalOptions="Fill"
-               HorizontalTextAlignment="Center"
-               VerticalOptions="EndAndExpand"
-               BackgroundColor="Red"
-               TextColor="Yellow"/>
+
+        <Grid RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            
+            <BoxView BackgroundColor=" Blue"
+                     WidthRequest=" 100"
+                     HeightRequest=" 100"
+                     Grid.Row=" 0"
+                     Grid.Column="0"
+                     />
+
+            <Button BackgroundColor=" Blue"
+                    WidthRequest=" 200"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="About me"
+                    
+                x:Name="NavigationButton1"
+               Clicked="NavigationButton1_Clicked"
+                
+                />
+
+
+            <BoxView BackgroundColor="Green" 
+                     WidthRequest=" 100"
+                     HeightRequest=" 100"
+                     Grid.Row=" 1"
+                     Grid.Column="0"
+                     />
+
+            <Button BackgroundColor=" Green"
+                    WidthRequest=" 200"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                />
+
+            <BoxView BackgroundColor="Red"
+                     WidthRequest=" 100"
+                     HeightRequest=" 100"
+                     Grid.Row=" 2"
+                     Grid.Column="0"
+                     />
+            <Button BackgroundColor=" Red"
+                    WidthRequest="200"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                />
+
+        </Grid >
     </StackLayout>
 </ContentPage>
+
+    

@@ -36,7 +36,7 @@
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
             
-            <BoxView BackgroundColor=" Blue"
+            <Image Source="AboutMe.jpg"
                      WidthRequest=" 100"
                      HeightRequest=" 100"
                      Grid.Row=" 0"
@@ -55,7 +55,7 @@
                 />
 
 
-            <BoxView BackgroundColor="Green" 
+            <Image Source="https://static.thenounproject.com/png/225624-200.png"
                      WidthRequest=" 100"
                      HeightRequest=" 100"
                      Grid.Row=" 1"
@@ -63,6 +63,7 @@
                      />
 
             <Button BackgroundColor=" Green"
+                    Text="Skills"
                     WidthRequest=" 200"
                     Grid.Row="1"
                     Grid.Column="1"
@@ -75,6 +76,7 @@
                      Grid.Column="0"
                      />
             <Button BackgroundColor=" Red"
+                    Text ="Contact Me"
                     WidthRequest="200"
                     Grid.Row="2"
                     Grid.Column="1"

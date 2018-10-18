@@ -8,21 +8,7 @@
                  Spacing=" 20"
                  HorizontalOptions="FillAndExpand" >
 
-        <Label Text="This is An About me App" 
-               HeightRequest="65"
-               FontSize="30"
-               HorizontalOptions="Fill"
-               HorizontalTextAlignment="Center"
-               BackgroundColor="Red"
-               TextColor="Yellow"/>
-        <Label Text="Tiger Ren" 
-               FontSize="40"
-               Margin="50,60"
-               WidthRequest="200"
-               HeightRequest="65"
-               HorizontalOptions="Center"   
-               BackgroundColor="DeepSkyBlue"
-               HorizontalTextAlignment="Center"/>
+
 
         <Grid RowSpacing="20">
             <Grid.RowDefinitions>

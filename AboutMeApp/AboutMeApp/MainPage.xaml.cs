@@ -16,7 +16,7 @@ namespace AboutMeApp
 
         private void NavigationButton1_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new ABoutMEPage() );
         }
     }
 }

@@ -3,73 +3,90 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AboutMeApp"
              x:Class="AboutMeApp.MainPage">
-
-    <StackLayout Padding=" 20"
+    <ScrollView>
+        <StackLayout Padding=" 20"
                  Spacing=" 20"
                  HorizontalOptions="FillAndExpand" >
 
+        <Label Text="About Me App"
+               HorizontalOptions="Center" 
+               FontSize=" 50"
+               FontAttributes="Bold" TextColor="Yellow" />
 
-
-        <Grid RowSpacing="20">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions >
-                <ColumnDefinition  Width="1*"/>
-                <ColumnDefinition Width="2*"/>
-            </Grid.ColumnDefinitions>
-            
-            <Image Source="AboutMe.jpg"
+        <StackLayout BackgroundColor="White"   
+                     Orientation="Horizontal" >
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="NavigationButton1_Clicked" />
+            </StackLayout.GestureRecognizers>
+                <Image Source="AboutMe.jpg"
                      WidthRequest=" 100"
                      HeightRequest=" 100"
-                     Grid.Row=" 0"
-                     Grid.Column="0"
                      />
 
-            <Button BackgroundColor=" Blue"
+            <Button BackgroundColor="White" 
                     WidthRequest=" 200"
-                    Grid.Row="0"
-                    Grid.Column="1"
                     Text="About me"
-                    
-                x:Name="NavigationButton1"
-               Clicked="NavigationButton1_Clicked"
+                    FontSize=" 25"
+                    TextColor=" Black"
                 
                 />
+        </StackLayout>
 
-
-            <Image Source="https://static.thenounproject.com/png/225624-200.png"
+        <StackLayout BackgroundColor="Green" 
+                     Orientation="Horizontal" >
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="NavigationButton2_Clicked" />
+            </StackLayout.GestureRecognizers>
+            <Image Source="Skills.png"
                      WidthRequest=" 100"
                      HeightRequest=" 100"
-                     Grid.Row=" 1"
-                     Grid.Column="0"
                      />
 
             <Button BackgroundColor=" Green"
                     Text="Skills"
+                    FontSize=" 25"
                     WidthRequest=" 200"
-                    Grid.Row="1"
-                    Grid.Column="1"
                 />
+        </StackLayout>
 
-            <BoxView BackgroundColor="Red"
+        <StackLayout BackgroundColor="Red" 
+                     Orientation="Horizontal" >
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="NavigationButton3_Clicked" />
+            </StackLayout.GestureRecognizers>
+
+            <Image Source="ContactMe.png"
                      WidthRequest=" 100"
                      HeightRequest=" 100"
-                     Grid.Row=" 2"
-                     Grid.Column="0"
                      />
             <Button BackgroundColor=" Red"
                     Text ="Contact Me"
+                    FontSize=" 25"
                     WidthRequest="200"
-                    Grid.Row="2"
-                    Grid.Column="1"
                 />
-
-        </Grid >
     </StackLayout>
+
+  
+
+    <StackLayout BackgroundColor="Blue" 
+                     Orientation="Horizontal" >
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="NavigationButton4_Clicked" />
+            </StackLayout.GestureRecognizers>
+
+            <Image Source="MyBioIcon.png"
+                     WidthRequest=" 100"
+                     HeightRequest=" 100"
+                     />
+        <Button BackgroundColor=" Blue"
+                    Text ="My Bio"
+                    FontSize=" 25"
+                    WidthRequest="200"
+                />
+    </StackLayout>
+
+    </StackLayout>
+        </ScrollView>
 </ContentPage>
 
     

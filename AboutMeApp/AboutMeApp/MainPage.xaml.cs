@@ -33,5 +33,6 @@ namespace AboutMeApp
         {
             Navigation.PushAsync(new MyBio());
         }
+       
     }
 }
